@@ -1,15 +1,15 @@
 def prime(*numbers):
     for i in numbers:
         if i < 2:
-            print(i, " nie jest liczba pierwsza")
+            print(i, " is not prime")
         if i == 2:
-            print(i, " jest liczba pierwsza")
+            print(i, " is prime number")
         for j in range(2,i):
             if (i % j) == 0:
-                print(i, " nie jest liczba pierwsza")
+                print(i, " is not prime")
                 break
             else:
-                print(i, " jest liczba pierwsza")
+                print(i, " is prime number")
                 break
 
-prime(0, 1, 2, 3)
+prime(0, 1, 2, 3,4,5)
